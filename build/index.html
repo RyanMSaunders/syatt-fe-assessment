@@ -50,14 +50,6 @@
     <link rel="stylesheet" href="/stylesheets/footer-utility.css" media="print" onload="this.media='all'">
 
 
-    <script type="importmap">
-      {
-        "imports": {
-          "helpers": "/javascripts/helpers.js",
-          "wyatt": "/javascripts/wyatt.js"
-        }
-      }
-    </script>
   </head>
   <body>
 
@@ -109,7 +101,6 @@
     </li>
     <li class="utility-nav__item utility-nav__item--cart">
       <wyatt-drawer>
-        <script src="/javascripts/drawer.js" type="module"></script>
 
         <span class="utility-nav__action button-reset" data-open="" aria-label="View your cart">
           <span class="icon icon--cart utility-nav__icon">
@@ -204,7 +195,6 @@
 
             <td class="line-item__cell line-item__cell--actions">
               <quantity-stepper class="quantity-stepper">
-  <script src="/javascripts/quantity-stepper.js" type="module"></script>
 
   <button class="quantity-stepper__button quantity-stepper__button--decrement button-reset" name="minus" type="button" aria-label="Decrease quantity">
     <span class="icon icon--minus quantity-stepper__icon" aria-hidden="true" focusable="false" role="presentation">
@@ -280,10 +270,8 @@
 
     <page-navigation class="page-header__navigation hidden-until-wide">
       <hover-intent>
-        <script src="/javascripts/hover-intent.js" type="module"></script>
 
         <div class="primary-nav" id="primary-nav">
-  <script src="/javascripts/nav-item.js" type="module"></script>
   
 
   <ul class="primary-nav__menu inline-list">
@@ -916,7 +904,6 @@
 
     <page-navigation class="page-header__navigation hidden-at-wide">
       <wyatt-drawer>
-        <script src="/javascripts/drawer.js" type="module"></script>
 
         
         
@@ -951,7 +938,7 @@
 
             <div class="drawer__body">
               <div class="mobile-nav">
-  <script src="/javascripts/mobile-nav-item.js" type="module"></script>
+  
   
   <!-- There are no changes expected from this point down into the DOM -->
   <ul class="mobile-nav__menu list-reset">
@@ -2678,5 +2665,24 @@
 </section>
   </div>
 </div>
+
+<script type="importmap">
+  {
+    "imports": {
+      "helpers": "/javascripts/helpers.js",
+      "wyatt": "/javascripts/wyatt.js"
+    }
+  }
+</script>
+
+<script src="/javascripts/drawer.js" type="module"></script>
+<script src="/javascripts/quantity-stepper.js" type="module"></script>
+<script src="/javascripts/hover-intent.js" type="module"></script>
+<script src="/javascripts/nav-item.js" type="module"></script>
+<script src="/javascripts/drawer.js" type="module"></script>
+<script src="/javascripts/mobile-nav-item.js" type="module"></script>
+
+
+
   </body>
 </html>
