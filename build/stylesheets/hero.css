@@ -4,7 +4,10 @@
     display: grid;
     position: relative;
         grid-template-areas: "media";
-    width: 100%; }
+    width: 100%;
+    
+  
+  }
   .hero__media-wrapper {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
